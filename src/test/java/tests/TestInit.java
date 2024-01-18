@@ -24,7 +24,7 @@ public class TestInit extends Assert {
     }
 
     @AfterMethod
-    public void closeTest() {
+    public void closeBrowser() {
         WebDriverRunner.getWebDriver().quit();
     }
 }

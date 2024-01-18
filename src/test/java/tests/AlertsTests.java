@@ -25,8 +25,6 @@ public class AlertsTests extends TestInit {
         alertsPage.clickAlertButton();
 
         assertTrue(isAlertPresent(), "Alert is not appear");
-
-        switchTo().alert().accept();
     }
 
     @Test
@@ -34,8 +32,6 @@ public class AlertsTests extends TestInit {
         alertsPage.clickAlertAfterFiveSeconds();
 
         assertTrue(isAlertPresent(), "Alert is not appear");
-
-        switchTo().alert().accept();
     }
 
     @Test

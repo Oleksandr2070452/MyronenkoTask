@@ -28,7 +28,7 @@ public class NestedFramesTests extends TestInit {
 
         nestedFramesPage.switchToChildFrame();
 
-        assertTrue(nestedFramesPage.getChildFrameText().isDisplayed(), "Text is not visible");
+        assertTrue(nestedFramesPage.getChildFrameText().isImage(), "Text is not visible");
 
         switchTo().parentFrame();
 

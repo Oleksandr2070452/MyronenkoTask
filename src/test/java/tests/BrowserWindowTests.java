@@ -59,7 +59,5 @@ public class BrowserWindowTests extends TestInit {
         browserWindowPage.clickNewWindowMessageButton();
 
         assertTrue(browserWindowPage.getNewWindowMessagePageBody().isDisplayed(), "Text is not displayed");
-
-        closeWindow();
     }
 }
