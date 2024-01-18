@@ -24,18 +24,18 @@ public class NestedFramesTests extends TestInit {
     public void checkNestedFrames() {
         nestedFramesPage.switchToParentFrame();
 
-        assertTrue(nestedFramesPage.getParentFrameText().isDisplayed());
+        assertTrue(nestedFramesPage.getParentFrameText().isDisplayed(), "Text is not visible");
 
         nestedFramesPage.switchToChildFrame();
 
-        assertTrue(nestedFramesPage.getChildFrameText().isDisplayed());
+        assertTrue(nestedFramesPage.getChildFrameText().isDisplayed(), "Text is not visible");
 
         switchTo().parentFrame();
 
-        assertTrue(nestedFramesPage.getParentFrameText().isDisplayed());
+        assertTrue(nestedFramesPage.getParentFrameText().isDisplayed(), "Text is not visible");
 
         switchTo().defaultContent();
 
-        assertTrue(framesPage.getMainPageContainer().isDisplayed());
+        assertTrue(framesPage.getMainPageContainer().isDisplayed(), "Text is not visible");
     }
 }
